@@ -1,85 +1,127 @@
-/* Basic reset */
+/* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body & Background */
+/* Body Style */
 body {
-    font-family: 'Arial', sans-serif;
-    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/c405fbb167f973b393e251c6ed1a713ba4f39eaf.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: #fff;
 }
 
 /* Login Container */
 .login-container {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Logo */
-.logo {
-    width: 200px;
-    margin-bottom: 20px;
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Login Content */
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Netflix Logo */
+.netflix-logo {
+  max-width: 200px;
+  margin-bottom: 40px;
 }
 
 /* Form */
 .login-form {
-    margin-top: 20px;
+  width: 100%;
 }
 
-/* Inputs & Button */
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #e50914;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #f40612;
+.submit-btn:hover {
+  background-color: #f40612;
 }
 
-/* Error message */
-.error {
-    color: #ff4d4d;
-    font-size: 14px;
+/* Remember Me Checkbox */
+.remember-me {
+  margin: 10px 0;
 }
 
-/* Links */
-.login-options {
-    margin-top: 20px;
-    font-size: 14px;
+/* Forgot Password */
+.forgot-password {
+  margin: 10px 0;
 }
 
-.login-options a {
-    color: #fff;
-    text-decoration: none;
+.forgot-password a {
+  color: #b3b3b3;
+  text-decoration: none;
 }
 
-.login-options a:hover {
-    text-decoration: underline;
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Sign Up Prompt */
+.signup-prompt {
+  margin-top: 20px;
+}
+
+.signup-prompt span {
+  font-size: 14px;
+}
+
+.signup-prompt a {
+  color: #b3b3b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
 }
