@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/c405fbb167f973b393e251c6ed1a713ba4f39eaf.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Login Container */
+.login-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.login-form {
+    margin-top: 20px;
+}
+
+/* Inputs & Button */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f40612;
+}
+
+/* Error message */
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+}
+
+/* Links */
+.login-options {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
