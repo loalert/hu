@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Login</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix-Style Images</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
 
-        <div class="login-form">
-            <h1>Sign In</h1>
-            <form id="login-form">
-                <input type="email" id="email" placeholder="Email or Phone number" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <button type="submit">Sign In</button>
-            </form>
-            <p class="error" id="error-message"></p>
-            <div class="login-options">
-                <p>New to Netflix? <a href="#">Sign up now.</a></p>
-                <p><a href="#">Need help?</a></p>
-            </div>
-        </div>
-    </div>
+  <header>
+    <h1>Netflix-like Image Grid</h1>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="image-grid">
+      <div class="image-item">
+        <img src="images/movie1.jpg" alt="Movie 1">
+      </div>
+      <div class="image-item">
+        <img src="images/movie2.jpg" alt="Movie 2">
+      </div>
+      <div class="image-item">
+        <img src="images/movie3.jpg" alt="Movie 3">
+      </div>
+      <div class="image-item">
+        <img src="images/movie4.jpg" alt="Movie 4">
+      </div>
+      <!-- Add more items as needed -->
+    </section>
+  </main>
+
 </body>
 </html>
