@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix-Style Images</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Netflix Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Netflix-like Image Grid</h1>
-  </header>
-
-  <main>
-    <section class="image-grid">
-      <div class="image-item">
-        <img src="images/movie1.jpg" alt="Movie 1">
-      </div>
-      <div class="image-item">
-        <img src="images/movie2.jpg" alt="Movie 2">
-      </div>
-      <div class="image-item">
-        <img src="images/movie3.jpg" alt="Movie 3">
-      </div>
-      <div class="image-item">
-        <img src="images/movie4.jpg" alt="Movie 4">
-      </div>
-      <!-- Add more items as needed -->
-    </section>
-  </main>
-
+  <div class="login-container">
+    <!-- Background Image -->
+    <div class="background-image"></div>
+    
+    <div class="login-content">
+      <!-- Netflix Logo -->
+      <img src="assets/netflix-logo.png" alt="Netflix Logo" class="netflix-logo">
+      
+      <!-- Login Form -->
+      <form action="#" method="POST" class="login-form">
+        <h1>Sign In</h1>
+        <input type="email" name="email" placeholder="Email or phone number" required class="input-field">
+        <input type="password" name="password" placeholder="Password" required class="input-field">
+        
+        <button type="submit" class="submit-btn">Sign In</button>
+        
+        <div class="remember-me">
+          <label>
+            <input type="checkbox" name="remember-me"> Remember me
+          </label>
+        </div>
+        
+        <div class="forgot-password">
+          <a href="#">Need help?</a>
+        </div>
+        
+        <div class="signup-prompt">
+          <span>New to Netflix?</span>
+          <a href="#">Sign up now</a>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
